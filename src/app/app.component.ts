@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'calender';
+  lang = 'en';
+  date: string;
+  constructor() { }
+
+  calenderValue(date: string) {
+    this.date = date;
+  }
 }
